@@ -24,11 +24,11 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll lg:flex " ref={containerRef}>
+      <div className="h-full overflow-scroll lg:flex  " ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="w-full p-5 sm:p-5  md:p-8 lg:p-16 xl:p-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64  lg:pr-0 ">
+        <div className="  p-5 sm:p-5  md:p-8 lg:p-16 xl:p-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64  lg:w-2/3 lg:pr-0 xl:w-1/2 ">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 items-center justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
               src="/my.jpg"
@@ -337,7 +337,7 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-full ">
+        <div className="hidden lg:block w-1/3 sticky top-0 z-30  xl:w-1/2 ">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
