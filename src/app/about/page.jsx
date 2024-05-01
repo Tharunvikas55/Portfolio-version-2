@@ -24,9 +24,9 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full flex overflow-scroll " ref={containerRef}>
+      <div className="h-full overflow-scroll lg:flex " ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-1 w-1/2 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-10 md:gap-28 lg:gap-12 xl:gap-56 lg:w-1/2  xl:w-1/2">
+        <div className="w-full p-5 sm:p-5  md:p-8 lg:p-16 xl:p-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64  lg:pr-0 ">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -223,7 +223,7 @@ const AboutPage = () => {
           </div>
           {/* EDUCATION CONTAINER */}
           <div
-            className="flex flex-col gap-8 justify-center pb-48"
+            className="flex flex-col gap-12 justify-center pb-48"
             ref={EDUCATIONRef}
           >
             {/* EDUCATION TITLE */}
@@ -246,15 +246,15 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-2 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   Master Of Science In Software Systems
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-1 text-sm italic">
-                  Kongu Engineering College,Perundurai {" "}
+                  <div className="p-3 text-sm italic">
+                  Kongu Engineering College, Perundurai {" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-1 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold">
                   2020 - Present {""}
                   </div>
                   {/* JOB COMPANY */}
@@ -288,15 +288,15 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-1 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   High School Certificate
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-1 text-sm italic">
-                   Bharathi Matric Higher Secondary School,Vijayamangalam{" "}
+                  <div className="p-3 text-sm italic">
+                   Bharathi Matric Higher Secondary School, Vijayamangalam{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-1 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold">
                   2019 - 2020 {" "}
                   </div>
                   {/* JOB COMPANY */}
@@ -314,11 +314,11 @@ const AboutPage = () => {
                   Secondary School Leaving Certificate{" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-1 text-sm italic">
-                  SR Matric Higher Secondary School,Uthukuli{" "}
+                  <div className="p-3 text-sm italic">
+                  SR Matric Higher Secondary School, Uthukuli{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-1 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold">
                   2017-2018{" "}
                   </div>
                 </div>
@@ -337,7 +337,7 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/2 sticky top-0 z-25 xl:w-1/2">
+        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-full ">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>

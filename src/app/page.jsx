@@ -8,13 +8,15 @@ const Homepage = () => {
   <motion.div className="h-full " initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
     <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/*IMAGE CONTAINER*/}
-    <div className=" h-1/2 lg:h-full lg:w-1/2 relative">
+    <div className=" h-1/2 lg:h-full  lg:w-1/2 relative mb-6">
       <Image  src="/hero.png" alt="" fill className="object-contain"/>
     </div>
+    
+    
       {/*TEXT CONTAINER*/}
     <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
       {/*TITLE*/}
-      <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold">Crafting Digital Experiences,Desing Tomorrow.</h1>
+      <h1 className="sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl font-bold">Crafting Digital Experiences,Desing Tomorrow.</h1>
       {/*DESC*/}
       <p className="md:text-xl">Welcome to my digital canvas,where innovation and creativity converge.with a keen eye for aesthetics and a mastery of code ,my portfolio showcases a diverse collection of projects that reflect my commitment to excellence.</p>
       {/*BUTTONS*/}
@@ -26,6 +28,7 @@ const Homepage = () => {
       </div>
     </div>
     </div>
+    <div className="m-2"></div>
   </motion.div>
   );
 };

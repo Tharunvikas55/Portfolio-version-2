@@ -53,7 +53,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[700vh] relative bg-gradient-to-r from-purple-300 to-red-300 " ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-center ">
           My Works
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden bg-gradient-to-r from-purple-300 to-red-300">
@@ -68,7 +68,7 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-4xl xl:text-4xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-70 h-50 md:w-96 md:h-64 lg:w-[600px] lg:h-[400px] xl:w-[500px] xl:h-[300px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[300px] xl:w-[500px] xl:h-[300px]">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
@@ -83,7 +83,7 @@ const PortfolioPage = () => {
               </div>
             ))}
             <div className="w-screen h-screen flex flex-col pl-5 ml-2 gap-16 items-center justify-center text-center ">
-        <h1 className="text-8xl">Do you have a project?</h1>
+        <h1 className="text-3xl  md:text-6xl lg:text-7xl xl:text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
