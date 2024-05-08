@@ -101,7 +101,7 @@ const Navbar = () => {
           <Link href="#">
           <Image src="/instagram.png" alt="" width={24} height={24}/>
           </Link>
-          <Link href="https://www.linkedin.com/in/tharun-vikas-a51802228/">
+          <Link href="https://www.linkedin.com/in/tharunvikas55/">
           <Image src="/linkedin.png" alt="" width={24} height={24}/>
           </Link>
           
