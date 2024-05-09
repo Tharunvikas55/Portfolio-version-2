@@ -4,6 +4,22 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Homepage = () => {
+  const handleDownload = () => {
+    // Construct the URL to your resume file
+    const resumeUrl = '/Tharuns_Resume.pdf';
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the href attribute to the URL of the resume file
+    link.href = resumeUrl;
+    // Set the download attribute to force download
+    link.setAttribute('download', 'Tharun_Resume.pdf');
+    // Append the anchor element to the body
+    document.body.appendChild(link);
+    // Programmatically trigger a click event on the anchor element
+    link.click();
+    // Remove the anchor element from the body
+    document.body.removeChild(link);
+  };
   return ( 
   <motion.div className="h-full " initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
     <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
@@ -23,8 +39,7 @@ const Homepage = () => {
       <div className=" w-full flex gap-4">
         <Link  href="/projects" >
         <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button></Link>
-        <Link href="/contact">
-        <button className="p-4 rounded-lg ring-1 ring-black"> Contact Me</button></Link>
+        <button className="p-4 rounded-lg ring-1 ring-black" onClick={handleDownload}>Resume</button>
       </div>
     </div>
     </div>
