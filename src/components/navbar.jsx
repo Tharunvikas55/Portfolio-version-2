@@ -67,8 +67,6 @@ const Navbar = () => {
     },
   };
  
-
-
   return (
     <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl '>
       <div className="hidden md:flex gap-4 w-1/3">
@@ -89,6 +87,9 @@ const Navbar = () => {
           <Link href="https://github.com/Tharunvikas55">
           <Image src="/github.png" alt="" width={24} height={24}/>
           </Link>
+          <Link href="https://www.linkedin.com/in/tharunvikas55/">
+          <Image src="/linkedin.png" alt="" width={24} height={24}/>
+          </Link>
           <Link href="https://twitter.com/STharunvikas/">
           <Image src="/twitter.png" alt="" width={24} height={24}/>
           </Link>
@@ -100,11 +101,7 @@ const Navbar = () => {
           </Link>
           <Link href="https://www.instagram.com/tharun_kongu055?igsh=MTBobDRxbWx6NjN5NQ==">
           <Image src="/instagram.png" alt="" width={24} height={24}/>
-          </Link>
-          <Link href="https://www.linkedin.com/in/tharunvikas55/">
-          <Image src="/linkedin.png" alt="" width={24} height={24}/>
-          </Link>
-          
+          </Link> 
         </div>
        {/*RESPONSIVE MENU*/}   
        <div className="md:hidden " >
@@ -115,7 +112,6 @@ const Navbar = () => {
           <motion.div variants={bottomVarients} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded  origin-left"></motion.div>
         </button>
         {/*MENU LIST*/}
-
         {open &&(
           <motion.div variants={listVarients} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40">
           
@@ -130,5 +126,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar;
