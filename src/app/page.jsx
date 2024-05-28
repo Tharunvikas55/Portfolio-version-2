@@ -6,7 +6,7 @@ import Link from "next/link";
 const Homepage = () => {
   const handleDownload = () => {
     // Construct the URL to your resume file
-    const resumeUrl = '/public/tharun_s_resume.pdf';
+    const resumeUrl = '/tharun_s_resume.pdf';
     // Create an anchor element
     const link = document.createElement('a');
     // Set the href attribute to the URL of the resume file
