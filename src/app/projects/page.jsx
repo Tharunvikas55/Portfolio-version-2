@@ -29,6 +29,14 @@ const items = [
     img: "/courseexemption.png",
     link: "https://github.com/Tharunvikas55/grocery_project_version1",
   },
+  {
+    id: 4,
+    color: "from-violet-300 to-purple-300",
+    title: "Guess The Number Game",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    img: "/guessthenumber.png",
+    link: "https://guessthenumber-tharuns-projects-dcc1edc1.vercel.app/",
+  },
   // {
   //   id: 4,
   //   color: "from-purple-300 to-red-300",
