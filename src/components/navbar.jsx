@@ -87,7 +87,7 @@ const Navbar = () => {
           <Link href="https://github.com/Tharunvikas55">
           <Image src="/github.png" alt="" width={24} height={24}/>
           </Link>
-          <Link href="https://www.linkedin.com/in/tharunvikas55/">
+          <Link href="https://leetcode.com/u/tharunvikas18/">
           <Image src="/linkedin.png" alt="" width={24} height={24}/>
           </Link>
           <Link href="https://twitter.com/STharunvikas/">
