@@ -93,9 +93,6 @@ const Navbar = () => {
           <Link href="https://twitter.com/STharunvikas/">
           <Image src="/twitter.png" alt="" width={24} height={24}/>
           </Link>
-          {/* <Link href="#">
-          <Image src="/dribbble.png" alt="" width={24} height={24}/>
-          </Link> */}
           <Link href="https://www.facebook.com/sstharun.vikas?mibextid=ZbWKwL">
           <Image src="/facebook.png" alt="" width={24} height={24}/>
           </Link>
