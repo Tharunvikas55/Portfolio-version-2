@@ -22,7 +22,7 @@ const Navbar = () => {
       rotation:0,
     },
     opened:{
-      rotate:45,
+      rotate:46,
       backgroundColor:"rgb(255,255,255)"
     }
   };
