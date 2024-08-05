@@ -10,28 +10,37 @@ const ContactPage = () => {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setError(false);
-    setSuccess(false);
+const sendEmail = (e) => {
+  e.preventDefault();
+  setError(false);
+  setSuccess(false);
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          form.current.reset();
-        },
-        () => {
-          setError(true);
-        }
-      );
-  };
+  const email = form.current.user_email.value;
+  const message = form.current.user_message.value;
+
+  if (!email || !message) {
+    setError(true);
+    return;
+  }
+
+  emailjs
+    .sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      form.current,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        setSuccess(true);
+        form.current.reset();
+      },
+      () => {
+        setError(true);
+      }
+    );
+};
+
 
   return (
     <motion.div
