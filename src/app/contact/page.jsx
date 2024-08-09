@@ -46,7 +46,7 @@ const sendEmail = (e) => {
     <motion.div
       className="h-full"
       initial={{ y: "-200vh" }}
-      animate={{ y: "0%" }}
+      animate={{ y: "1%" }}
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
