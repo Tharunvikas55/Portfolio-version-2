@@ -12,7 +12,7 @@ const Brain = ({ scrollYProgress }) => {
   const rotatesBackward3 = useTransform(scrollYProgress, [0, 1], [0, -90]);
   const rotatesBackward4 = useTransform(scrollYProgress, [0, 1], [0, -45]);
   return (
-    <div className="w-1/2 h-1/2 relative">
+    <div className="w-full h-full relative">
       <svg width="100%" height="100%" >
         <defs>
           <path d="M.416.37V.366L.417.345V.37" id="path-1" />
