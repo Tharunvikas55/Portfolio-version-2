@@ -18,7 +18,7 @@ const AboutPage = () => {
 
   return (
     <motion.div
-      className="h-full w-1/2"
+      className="h-full w-full"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
