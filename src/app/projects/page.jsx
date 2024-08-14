@@ -50,8 +50,8 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "React StopWatch",
     desc: "project involves creating a responsive and user-friendly stopwatch application using React. The stopwatch component is designed with a clean and intuitive interface, allowing users to start, pause, and reset the timer with ease.",
-    img: "/courseexemption.png",
-    link: "https://github.com/Tharunvikas55/",
+    img: "/stopwatch.png",
+    link: "https://stopwatchtharunvikas-dn4o4f4by-tharuns-projects-dcc1edc1.vercel.app/",
   }
   // {
   //   id: 4,
