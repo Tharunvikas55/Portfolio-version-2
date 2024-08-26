@@ -15,15 +15,6 @@ const ContactPage = () => {
     setError(false);
     setSuccess(false);
 
-    const fromName = form.current.user_name.value;
-    const email = form.current.user_email.value;
-    const message = form.current.user_message.value;
-
-    if (!fromName || !email || !message) {
-      setError(true);
-      return;
-    }
-
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -46,7 +37,7 @@ const ContactPage = () => {
     <motion.div
       className="h-full"
       initial={{ y: "-200vh" }}
-      animate={{ y: "1%" }}
+      animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
@@ -74,33 +65,22 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 rounded-xl md:text-xl text-sm flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
-          <span>Dear Tharun,</span>
-          <input
-            name="user_name"
-            type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
-            placeholder="Your Name"
-            required
-          />
+          <span>Dear Lama Dev,</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
-            placeholder="Type your message here..."
-            required
           />
-          <span>My email address:</span>
+          <span>My mail address is:</span>
           <input
             name="user_email"
-            type="email"
+            type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
-            placeholder="Your email address"
-            required
           />
           <span>Regards</span>
-          <button type="submit" className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
           {success && (
@@ -114,7 +94,6 @@ const ContactPage = () => {
             </span>
           )}
         </form>
-        <div className="m-2"></div>
       </div>
     </motion.div>
   );
