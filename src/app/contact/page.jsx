@@ -83,7 +83,7 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none"
             placeholder="Your Name"
             required
-          />
+          /> <br/>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
