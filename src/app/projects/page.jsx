@@ -101,7 +101,7 @@ const PortfolioPage = () => {
                   
                   <Link href={item.link} className=" justify-end">
                   
-                    <button className="p-1 flex text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-3 rounded"> <Image src="/github.png" alt=""  width={24} height={24}/>See Demo</button>
+                    <button className="p-1 flex text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-3 rounded"> <Image src="/github.png" alt=""  width={24} height={24}/>See</button>
                   </Link>
                 </div>
               </div>
