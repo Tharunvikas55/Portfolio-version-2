@@ -10,37 +10,37 @@ const ContactPage = () => {
 
   const form = useRef();
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  setError(false);
-  setSuccess(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setError(false);
+    setSuccess(false);
 
-  const email = form.current.user_email.value;
-  const message = form.current.user_message.value;
+    const fromName = form.current.user_name.value;
+    const email = form.current.user_email.value;
+    const message = form.current.user_message.value;
 
-  if (!email || !message) {
-    setError(true);
-    return;
-  }
+    if (!fromName || !email || !message) {
+      setError(true);
+      return;
+    }
 
-  emailjs
-    .sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      form.current,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY
-    )
-    .then(
-      () => {
-        setSuccess(true);
-        form.current.reset();
-      },
-      () => {
-        setError(true);
-      }
-    );
-};
-
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setSuccess(true);
+          form.current.reset();
+        },
+        () => {
+          setError(true);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -74,23 +74,34 @@ const sendEmail = (e) => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2  lg:h-full lg:w-1/2 rounded-xl md:text-xl text-sm  flex flex-col gap-8 justify-center p-24 "
+          className="h-1/2 lg:h-full lg:w-1/2 rounded-xl md:text-xl text-sm flex flex-col gap-8 justify-center p-24"
         >
           <span>Dear Tharun,</span>
+          <input
+            name="user_name"
+            type="text"
+            className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="Your Name"
+            required
+          />
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
+            placeholder="Type your message here..."
+            required
           />
-          <span>My mail address:</span>
+          <span>My email address:</span>
           <input
             name="user_email"
-            type="text"
+            type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="Your email address"
+            required
           />
           <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            send
+          <button type="submit" className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+            Send
           </button>
           {success && (
             <span className="text-green-600 font-semibold">
