@@ -11,6 +11,5 @@ You can view the live portfolio at https://tharunvikas.vercel.app.
 
 For any inquiries or collaboration opportunities, please reach out to me at:
 
-Email: ssstharunvikas@gmail.com 📧
 
 LinkedIn: [Tharun Vikas](https://www.linkedin.com/in/tharunvikas55/) 🔗
