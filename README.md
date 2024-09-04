@@ -4,8 +4,7 @@ Welcome to my portfolio! 🎉 This website showcases my projects, skills, and ac
 
 🌐 Live Demo
 
-You can view the live portfolio at https://tharunvikas.vercel.app.
-
+You can view the live portfolio at https://tharunvikas.vercel.app
 
 📞 Contact
 
