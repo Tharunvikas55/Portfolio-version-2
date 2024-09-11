@@ -27,7 +27,7 @@ const items = [
     title: "Detection Of Monkeypox Disease Using Deep Learning Techniques.",
     desc: "Utilizes deep learning models to detect monkeypox lesions from dermatological images, offering a promising automated solution for timely diagnosis and intervention during outbreaks.",
     img: "/monkeypox.png",
-    link: "https://github.com/Tharunvikas55/",
+    link: "https://github.com/Tharunvikas55/Detection-Of-Monkeypox-Disease-Using-Deep-Learning-Techniques",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const items = [
     title: "Course Exemption System",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     img: "/courseexemption.png",
-    link: "https://github.com/Tharunvikas55/Detection-Of-Monkeypox-Disease-Using-Deep-Learning-Techniques",
+    link: "https://github.com/Tharunvikas55/",
   },
   {
     id: 6,
