@@ -19,7 +19,7 @@ const items = [
     title: "Vehicle Service Management System",
     desc: "Contributed to the Kongu College Hackathon, developing a Vehicle Service Management System web app for streamlined service and maintenance for efficient data handling and performance enhancement.",
     img: "/vehicleservice.png",
-    link: "https://github.com/Tharunvikas55/",
+    link: "https://github.com/Tharunvikas55/vehicleManagementSystem",
   },
   {
     id: 3,
