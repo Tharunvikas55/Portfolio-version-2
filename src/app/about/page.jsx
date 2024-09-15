@@ -55,7 +55,7 @@ const AboutPage = () => {
              Exploring diverse interests, I find joy in continuous self-improvement and learning, both in technology and beyond
 
             </span>
-            {/* BIOGRAPHY SIGN SVG*/}
+            
             {/* <div className="self-end">
               <svg
                 width="185"
@@ -71,7 +71,7 @@ const AboutPage = () => {
                 />
               </svg>
             </div> */}
-            {/* BIOGRAPHY SCROLL SVG */}
+           
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
