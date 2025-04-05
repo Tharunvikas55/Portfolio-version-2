@@ -41,20 +41,32 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            Hi! I am Tharun Vikas and glad that you are here to read about me.I was an average student in my school, not all the last bench students will be knowledge less. These are the universal truths. But Now, think about the middle bench students?They will be the guys who had stuff to come forward but never reached their goal in time, still they will never go back and stop their struggle.
-             I am one among the middle bench student who migrated from the last bench to the middle bench during the school days and now even on my college days.
-            Currently I am Pursuing M.Sc Software Systems in Kongu Engineering College, Perundurai,
-             my tech journey began in 7th Standard, evolving from hardware experiments to web technologies.
-              In college, I honed my logical and programming skills, exploring new technologies.
+            
+  Hi! I am Tharun Vikas and glad that you are here to read about me. I was an average student in my school, not all the last bench students will be knowledge-less. These are the universal truths. But now, think about the middle bench students? They will be the guys who had stuff to come forward but never reached their goal in time, still, they will never go back and stop their struggle.  
+  <br /><br />
+  I am one among the middle bench students who migrated from the last bench to the middle bench during the school days and now even in my college days.  
+  <br /><br />
+  Currently, I am pursuing an M.Sc Software Systems at Kongu Engineering College, Perundurai. My tech journey began in 7th Standard, evolving from hardware experiments to web technologies. In college, I honed my logical and programming skills, exploring new technologies.  
+</p>
 
-            </p>
-            {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
-            Beyond academics, I am passionate about surfing intriguing topics online. 
-            Music is a significant part of my life—I enjoy listening and occasionally dabble in music production.
-             Exploring diverse interests, I find joy in continuous self-improvement and learning, both in technology and beyond
+{/* BIOGRAPHY QUOTE */}
+<span className="italic">
+  Beyond academics, I am passionate about surfing intriguing topics online. Music is a significant part of my life—I enjoy listening and occasionally dabble in music production.  
+  Exploring diverse interests, I find joy in continuous self-improvement and learning, both in technology and beyond.
+</span>
 
-            </span>
+{/* Internship Section */}
+<div>
+  <h3>Internship Experience</h3>
+  <p><strong>Software Developer</strong> <span style={{ float: 'right' }}>Oct 2024 – Present</span></p>
+  <p>The Cloud Company, Erode, India</p>
+  <p>Collaborated on enterprise software solutions, focusing on full-stack development, system scalability, and optimization for high-load systems.</p>
+
+  <p><strong>Full Stack Developer</strong> <span style={{ float: 'right' }}>Jan 2024 – May 2024</span></p>
+  <p>Punchbiz Technologies, Salem, India</p>
+  <p>Gained hands-on experience in PHP, MySQL, and JavaScript for full-stack development. Enhanced skills in database management, server-side scripting, and teamwork.</p>
+</div>
+
             
             {/* <div className="self-end">
               <svg
