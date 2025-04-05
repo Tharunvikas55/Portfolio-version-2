@@ -39,8 +39,8 @@ const Homepage = () => {
       <div className=" w-full flex gap-4">
         <Link  href="/projects" >
         <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button></Link>
-{/*         <button className="p-4 rounded-lg ring-1 ring-black" onClick={handleDownload}>Resume</button> */}
-        <a href="https://peach-malissa-16.tiiny.site/" ><button className="p-4 rounded-lg ring-1 ring-black" >Resume</button></a>
+        <button className="p-4 rounded-lg ring-1 ring-black" onClick={handleDownload}>Resume</button>
+{/*         <a href="https://peach-malissa-16.tiiny.site/" ><button className="p-4 rounded-lg ring-1 ring-black" >Resume</button></a> */}
       </div>
     </div>
     </div>
